@@ -1,0 +1,6 @@
+<h3>Pedido</h3>
+<ul class="list-group list-group text-center">
+  @for (study of requestedStudies$ | async; track study.name) {
+  <li class="list-group-item">{{study.name}}</li>
+  }
+</ul>
